@@ -1,0 +1,10 @@
+#!/bin/bash
+
+J='/home/scott/j64-701/bin/jconsole'
+if [ x$J == x ]; then 
+ echo jconsole isn\'t on the path; exit
+fi
+DIR=`dirname $J`
+echo "J=$DIR" >Makefile
+cat Makefile.in >>Makefile
+

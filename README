@@ -1,0 +1,11 @@
+I found this linked on J software's website. There are probably
+other ways to call J from a C program documented, but this looks
+like a useful framework to deal with returned values from a 
+J ticker plant. 
+
+I got the original stuff here:
+http://www.ivorykite.com/apl/jx.html
+
+It now builds at least, though I don't think I've quite got the
+linking/dependencies right. Untested. 
+

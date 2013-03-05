@@ -1,0 +1,7 @@
+LIBRARY j
+EXPORTS
+JDo@8      @8   
+JFree@4    @11   
+JGetM@24   @13   
+JInit@0    @14   
+JSetM@24   @17   

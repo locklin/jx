@@ -1,0 +1,11 @@
+CFLAGS=-g -fPIC -O3 -fno-strict-aliasing -DNOASM  
+## -O0 -fno-PIC -mcmodel=large
+install: o test
+	cp libjx.so $J
+test: o
+	gcc $(CFLAGS) jxt.c -L$J -ljx -Wl,-rpath=$J -o jxt 
+o:
+	gcc $(CFLAGS) -c jx.c
+	gcc $(CFLAGS) jx.o -shared -L$J -lj -Wl,-rpath=$J -o $J/libjx.so 
+clean:
+	rm $J/libjx.so *.o jxt *.c~ *.h~ Makefile.in~ configure~
